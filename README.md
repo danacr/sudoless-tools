@@ -4,5 +4,5 @@ Useful tools to run in a container when your clusters don't allow to run contain
 
 Launch:
 ```bash
-kubectl run -it --rm --image danacr/sudoless-tools tools -- bash
+kubectl run -it --rm --image danacr/sudoless-tools:latest tools -- bash
 ```

@@ -7,10 +7,10 @@ RUN apt-get update && \
         netcat \
         wget
 
-RUN useradd -ms /bin/bash user
+RUN useradd -ms /bin/bash user -u 1001
 
 WORKDIR /home/user
 
-USER user
+USER 1001
 
 CMD sleep infinity
