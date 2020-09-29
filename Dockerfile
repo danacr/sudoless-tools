@@ -7,6 +7,10 @@ RUN apt-get update && \
         netcat \
         wget
 
-RUN groupadd -r user && useradd -r -g user user
+RUN useradd -ms /bin/bash user
+
+WORKDIR /home/user
 
 USER user
+
+CMD sleep infinity
